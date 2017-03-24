@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:weightSum="10">
+
+    <include
+        layout="@layout/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+
+        >
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="kr.co.open_it.smart_car_kit.subView.WebViewFragment"
+            android:id="@+id/fragment_webView"
+            android:visibility="visible"
+            />
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="kr.co.open_it.smart_car_kit.subView.SettingFragment"
+            android:id="@+id/fragment_setting"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+
+        >
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="kr.co.open_it.smart_car_kit.subView.ControlFragment"
+            android:id="@+id/fragment_control"
+            android:visibility="visible"/>
+    </FrameLayout>
+
+</LinearLayout>

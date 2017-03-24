@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--System -->
+    <color name="colorPrimary">#2a1d54</color>
+    <color name="colorPrimaryDark">#2a1d54</color>
+    <color name="colorAccent">#2a1d54
+    </color>
+
+    <!-- Layout -->
+    <color name="Navy">#2a1d54</color>
+    <color name="Gray">#999999</color>
+    <color name="textBoldGray">#333333</color>
+    <color name="textLightGray">#999999</color>
+    <color name="textWhite">#ffffff</color>
+
+    <color name="background">#eeeeee</color>
+
+    <color name="textBlack">#000000</color>
+</resources>

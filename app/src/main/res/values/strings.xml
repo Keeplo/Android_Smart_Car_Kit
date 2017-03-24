@@ -1,0 +1,9 @@
+<resources>
+    <!-- AppName -->
+    <string name="app_name">스마트 카 킷</string>
+
+    <!--fragments -->
+    <string name="fragment_con">무선 조종</string>
+    <string name="fragment_pre">무선 연결 설정</string>
+    <string name="fragment_web">웹뷰</string>
+</resources>

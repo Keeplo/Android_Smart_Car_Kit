@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_setting"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:baselineAligned="false"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="WebView URL : "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pre_tv_wbURL"
+                    android:textColor="@color/textLightGray"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal" />
+
+                <TextView
+                    android:text="MQTT URL : "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pre_tv_mqttURL"
+                    android:textColor="@color/textLightGray"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal"/>
+
+                <TextView
+                    android:text="Publish Topic : "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pre_tv_pubTopic"
+                    android:textColor="@color/textLightGray"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal"/>
+
+                <TextView
+                    android:text="Subscribe Topic : "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pre_tv_subTopic"
+                    android:textColor="@color/textLightGray"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:text="http://114.70.144.69:2201/?action=stream"
+                    android:id="@+id/pre_et_wbURL"
+                    android:textColor="@color/textWhite"
+                    android:ems="10"
+                    android:layout_weight="1" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:id="@+id/pre_et_mqttURL"
+                    android:textColor="@color/textWhite"
+                    android:ems="10"
+                    android:layout_weight="1"
+                    android:text="tcp://114.70.144.69:1883" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:text="open-it/order/RCCar"
+                    android:textColor="@color/textWhite"
+                    android:ems="10"
+                    android:id="@+id/pre_et_pubTopic"
+                    android:layout_weight="1" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:text="open-it/status/#"
+                    android:textColor="@color/textWhite"
+                    android:ems="10"
+                    android:id="@+id/pre_et_subTopic"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:text="Initialize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/textview_rounding"
+                android:id="@+id/pre_btn_init" />
+
+            <Button
+                android:text="DisConnect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pre_btn_disConnect"
+                android:layout_weight="1"
+                android:background="@drawable/m_off_bg"
+                android:textColor="@color/Navy" />
+
+            <Button
+                android:text="Connect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pre_btn_connect"
+                android:layout_weight="1"
+                android:background="@drawable/m_on_bg"
+                android:textColor="@color/textLightGray" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
